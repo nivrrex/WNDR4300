@@ -3,6 +3,8 @@ WNDR4300的OpenWRT编译固件，开启了128M空间，编译参数仅加入中�
 ```bash
 make image PROFILE="WNDR4300V1" PACKAGES="luci luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn"
 ```
+
+# 支持 OpenWrt 版本
 * lede-17.01.X
 * openwrt-18.06.X
 * openwrt-19.07.X
@@ -22,4 +24,4 @@ mount -t jffs2 /dev/mtdblock/3 /jffs
 5. 打开电源，开机后恢复成原厂固件
 
 # 备注
-openwrt-21.02.0 官方固件似乎已经变更了分区，不再更新
+openwrt-21.02.0 官方固件似乎已经变更了分区，直接支持128M空间，不再更新
